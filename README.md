@@ -1,1 +1,1 @@
-"# JavaScript Flappy Bird clone" 
+# JavaScript Flappy Bird clone
