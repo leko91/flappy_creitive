@@ -1,17 +1,41 @@
 <!doctype html>
 <head>
-    <meta charset="utf-8">
     <title>CreITive Flappy Bird</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
     <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <span class="js-mute mute">mute <i class="fa fa-volume-up"></i></span>
+  
+    <span class="js-score score">0</span>
 
-    <div class="theWorld">
-        <div class="theBird"></div>
+    <span class="js-help help">Use spacebar to jump</span>
+
+    <div class="js-ripScreen ripScreen is-hidden">
+        <h1>Game Over</h1>
+        <p class="js-ripScreenScore ripScreenScore">Your score was a </p>
+        <button class="js-tryAgain">Try again</button>
+        <span class="tryAgainText">or just press "R" :)</span>
     </div>
+
+    <img src="http://i.imgur.com/uz8jSWt.png" class="js-image image">
+
+    <audio class="js-jumpSound">
+        <source src="./assets/audio/sfx_wing.wav">
+    </audio>
+    <audio class="js-jumpSound">
+        <source src="./assets/audio/sfx_wing.wav">
+    </audio>
+    <audio class="js-jumpSound">
+        <source src="./assets/audio/sfx_wing.wav">
+    </audio>
+    <audio class="js-jumpSound">
+        <source src="./assets/audio/sfx_wing.wav">
+    </audio>
+    <audio class="js-jumpSound">
+        <source src="./assets/audio/sfx_wing.wav">
+    </audio>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="build/scripts.min.js"></script>

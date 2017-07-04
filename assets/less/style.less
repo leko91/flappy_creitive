@@ -8,6 +8,8 @@
   width: 600px;
   height: 400px;
 
+  overflow: hidden;
+
   background-color: wheat;
 
   transform: translate(-50%, -50%);
@@ -17,4 +19,138 @@
   position: absolute;
 
   background-color: yellow;
+}
+
+.thePipe {
+  position: absolute;
+
+  height: 100%;
+}
+
+.thePipe-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: green;
+}
+
+.thePipe-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  background-color: green;
+}
+
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.ripScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: 600px;
+  height: 400px;
+
+  color: #fff;
+
+  background-color: #000;
+
+  transform: translate(-50%, -50%);
+
+  h1 {
+    position: absolute;
+    top: 10%;
+
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 100px;
+    text-align: center;
+  }
+
+  p {
+    position: absolute;
+    top: 40%;
+
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 30px;
+    text-align: center;
+  }
+
+  button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.tryAgainText {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+
+  font-size: 12px;
+
+  transform: translateX(-50%);
+}
+
+.mute {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  cursor: pointer;
+}
+
+.score {
+  position: absolute;
+  top: calc(50% ~"-" 150px);
+  left: 50%;
+  z-index: 1;
+
+  font-size: 80px;
+
+  transform: translate(-50%, -50%);
+}
+
+.help {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  font-size: 54px;
+
+  transition: opacity .6s;
+
+  transform: translate(-50%, -50%);
+
+  &.is-hidden {
+    opacity: 0;
+  }
+}
+
+.image {
+  display: none;
+
+  z-index: 1;
 }
